@@ -1,0 +1,30 @@
+ #COMANDOS#
+  
+   ssh-keygen
+     cd .ssh
+       ls -lh
+          cat id_rsa.pub
+            Copiar a chave que irá gerar;
+            
+              Ex: AAAAB3NzaC1yc2EAAAADAQABAAABgQCeDslUHqHvi4AAY1oKvQI2LmNqBIxmYuEoUcjng7
+              NmWbmOYpND9uqlEl4qLi/6Eae75QgweZm9jdijln9hrG86mRxv/JXWCwcczbwG6bHf5GN2H/v
+              8WvXXtd7k1iVcfxL8QfqFpgIjD7MRmQCucjRcWP5YzPkZBSoXsG0jZzd6XvG9xoKS0TTlGQaTTQ
+              HCsr9uBUeJ5/i1MvBGBEGpcf2dl+ZdCuQRZxxSu0ZspJzFjC1iA/zg4JJtUtVBcwyZyOJLwxzgx1
+              1EcBpXb2V5y+oDz73tpUfTbOoVGaiHpj2xxq4x7tvbmIpcc+aPfrO5uTbEkFVA1aGnx9DR+scU/YIP
+              ElmkVigL255bdDa6h73uYzxxxxFevlvJ7pBU3DWbXmABUkd28W8mtLfo2SGgswJ5EkmAsTKtH0Yow78Z
+              Q1UXbTGQiKzqbeAkTpdpr4zxVyMwtYqedUSa9mDNBWYCI48/oB8lplQlcheOy8o5yIU8lmDOX5qz2Lf8
+              xb6FtHyuJD2N/+CU=
+              
+              tem que copiar até o sinal de igual;
+              
+              IR NO SITE DO SEU PFSENSE "Ex: http://172.16.X.254"
+                Após acessar o site entra na aba "SYSTEM"
+                  ADVANCED
+                    Ir até a aba "SECURE SHELL"
+                      Habilitar o Secure Shell Server
+                        E no SSHd Key Only colocar como: Require Both Password and Public Key;
+                          Depois ir na aba "SYSTEM" novamente e ir em "USER MANAGER" 
+                            Ir no Lápis de Editar
+                              Rolar a barra do mouse até "KEYS"
+                                e jogar a chave que você copiou para lá
+                                  e SALVAR. 
